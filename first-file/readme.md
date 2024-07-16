@@ -128,4 +128,4 @@ The Eden Natural Remedies site is being developed using a combination of industr
    - **Git:** Version control system for tracking changes in the source code and collaboration among developers.
    - **GitHub:** Used for hosting the project repository, managing issues, and facilitating collaboration among team members.
 
-By leveraging these tools and technologies, we aim to deliver a robust and user-friendly Herbal Remedy Generator that meets the needs and expectations of our users.
+By leveraging these tools and technologies, we aim to deliver a robust and user-friendly Herbal Remedy consultation platform that meets the needs and expectations of our users globally.
