@@ -13,6 +13,7 @@ body {
 .hero-section {
     background: url('') no-repeat center center;
     background-size: cover;
+    background-image: url();
     height: 400px;
     color: #ffffffde;
     text-align: center;
