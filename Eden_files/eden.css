@@ -4,6 +4,7 @@ body {
 
 .navbar {
     background-color: #4CAF50;
+    background-image: ('herbal3.JPG');
 }
 
 .navbar-brand, .nav-link {
@@ -13,7 +14,7 @@ body {
 .hero-section {
     background: url('') no-repeat center center;
     background-size: cover;
-    background-image: url();
+    background-image: url('herbal1.JPG');
     height: 400px;
     color: #ffffffde;
     text-align: center;
