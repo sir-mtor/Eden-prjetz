@@ -17,6 +17,23 @@ const herbs = [
     },
 ];
 
+document.addEventListener("DOMContentLoaded", () => {
+    const searchForm = document.getElementById("search-form");
+
+    // Handle search form submission
+    searchForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // Prevent page reload
+        const searchQuery = document.getElementById("search-input").value.trim();
+
+        if (searchQuery) {
+            alert(`Searching for "${searchQuery}"...`);
+            // Implement search functionality here
+        } else {
+            alert("Please enter a search term!");
+        }
+    });
+});
+
 // Function to Update Daily Herb Highlight
 function updateDailyHerb() {
     const herb = herbs[Math.floor(Math.random() * herbs.length)]; // Pick a random herb
@@ -39,11 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert("Sign-up functionality coming soon!");
     });
 
-    // Event listener for Login form
-    document.querySelector("#login-form").addEventListener("submit", (e) => {
-        e.preventDefault();
-        alert("Login functionality coming soon!");
-    });
+ 
 
     // Event listener for Shop button
     document.querySelector("#shop button").addEventListener("click", () => {
@@ -72,4 +85,24 @@ document.addEventListener("DOMContentLoaded", () => {
         link.click();
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const signupButton = document.getElementById("show-signup");
+    const loginButton = document.getElementById("show-login");
+    const signupFormContainer = document.getElementById("signup-form-container");
+    const loginFormContainer = document.getElementById("login-form-container");
+
+    // Toggle Sign Up form
+    signupButton.addEventListener("click", () => {
+        signupFormContainer.classList.toggle("hidden");
+        loginFormContainer.classList.add("hidden"); // Ensure the login form is hidden
+    });
+
+    // Toggle Login form
+    loginButton.addEventListener("click", () => {
+        loginFormContainer.classList.toggle("hidden");
+        signupFormContainer.classList.add("hidden"); // Ensure the sign-up form is hidden
+    });
+});
+
 
