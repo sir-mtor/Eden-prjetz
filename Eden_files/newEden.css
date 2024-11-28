@@ -1,0 +1,161 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background-color:#1e776c ;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+ /* Navigation Styles */
+header nav ul {
+    list-style: circle; /* Remove bullet points */
+    padding: 1;
+    margin: 2;
+    display: inline-block; /* Use flexbox for horizontal alignment */
+    justify-content: space-evenly; /* Center the items horizontally */
+    gap: 1.5rem; /* Add spacing between menu items */
+}
+
+header nav ul li {
+    display: inline; /* Ensure list items remain inline */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e9c46a; /* Change color on hover */
+}
+
+/* Main Content */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #264653;
+    margin-bottom: 1rem;
+}
+
+.daily-herb h3 {
+    color: #2a9d8f;
+    font-size: 1.5rem;
+}
+
+.daily-herb p {
+    font-size: 1rem;
+}
+
+/* Forms */
+form {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+}
+
+form h3 {
+    color: #2a9d8f;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.6rem 1.2rem;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #1e776c;
+}
+
+/* Buttons */
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e776c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #264653;
+    color: white;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    form {
+        padding: 0.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
